@@ -1,0 +1,171 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: url(../img/landingp/background-landingpage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* ESTILIZAÇÃO HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 50px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 99;
+}
+
+.logo-header a img {
+    width: 170px;
+}
+
+.menu-items a {
+    margin-left: 50px;
+    height: 25px;
+}
+
+.menu-items a img {
+    width: 25px;
+    filter: drop-shadow(2px 2px 2px #ff00ff);
+}
+
+/* FIM ESTILIZAÇÃO HEADER */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* LEFT SIDE */
+.left-side {
+    width: 50%;
+    height: 80vh;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left {
+    width: 100%;
+}
+
+.l-titulo {
+    width: 100%;
+    color: #FFB000;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 3vh;
+    letter-spacing: 2px;
+    text-shadow: 0.12vw 0px 0px #ff00ff, -0.12vw 0px 0px #00FFFF;
+    margin-top: 50px;
+}
+
+.l-titulo h1 {
+    margin-top: 5px;
+}
+
+.l-titulo img {
+    width: 80%;
+}
+
+.l-footer {
+    width: 100%;
+}
+
+.parag p {
+    width: 100%;
+    color: #FFB000;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+
+.btt {
+    width: 100%;
+}
+
+.sobrenos {
+    margin-top: 10px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobrenos a {
+    color: #640064;
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-decoration: none;
+}
+
+/* LEFT SIDE => ESTILIZAÇÃO BOTÃO ACESSE AQUI */
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btt button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: black;
+    background: #FFB000;
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: 2px 2px 0 #ff00ff,
+        -2px -2px 0 #00FFFF,
+        -2px 2px 0 #00FFFF,
+        2px -2px 0 #ff00ff;
+    transition: 500ms ease-in-out;
+}
+
+.btt button:hover {
+    box-shadow: 20px 5px 0 #ff00ff, -20px -5px 0 #00FFFF;
+}
+
+.btt button:focus {
+    outline: none;
+}
+
+/* RIGHT SIDE */
+
+.right-side {
+    z-index: 98;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.right-side img {
+    width: 80vw;
+    height: 48vw;
+    overflow: visible;
+    position: relative;
+    bottom: 30px;
+}
