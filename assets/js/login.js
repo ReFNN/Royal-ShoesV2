@@ -16,5 +16,3 @@ function hideIcon() {
 
 unhide.addEventListener("click", unhideIcon);
 hide.addEventListener("click", hideIcon);
-
-const prod1 = [nome: "sapato"];

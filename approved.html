@@ -32,14 +32,17 @@
                 </ul>
             </div>
             <div class="pesquisa">
-                <input type="text" placeholder="Pesquisar..." onclick="naoFunciona()">
+                <form action="#" method="get">
+                    <input type="text" name="idbusca" placeholder="Pesquisar..." list="dtlist">
+                    <datalist id="dtlist"></datalist>
+                </form>
             </div>
         </div>
     </header>
 
     <main>
         <div class="conteiner-form">
-          <!-- LADO ESQUERDO FORM -->
+            <!-- LADO ESQUERDO FORM -->
             <div class="left-side">
                 <h1>PAGAMENTO FINALIZADO!</h1>
                 <div class="card">
@@ -50,7 +53,7 @@
                     </div>
                 </div>
             </div>
-          <!-- LADO DIREITO FORM -->
+            <!-- LADO DIREITO FORM -->
             <div class="right-side">
                 <div class="compra-aprovada">
                     <h1>SUA COMPRA FOI APROVADA!</h1>
@@ -64,8 +67,9 @@
     </main>
     <!-- REFERÊNCIA JS -->
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/datalist.js"></script>
     <footer>
-      <!-- FOOTER -->
+        <!-- FOOTER -->
         <div class="conteiner-footer">
             <div class="sobre-nos">
                 <h2>SOBRE NÓS</h2>

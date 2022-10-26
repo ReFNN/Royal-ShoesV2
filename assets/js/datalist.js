@@ -1,19 +1,8 @@
-let count = 1;
-document.getElementById("radio1").checked = true;
+// ADICIONANDO DISPLAY NONE NO CSS
+var datalist = document.querySelector('datalist');
+datalist.style.display = 'none';
 
-setInterval(function () {
-    proxImagem();
-}, 5000)
-
-function proxImagem() {
-    count++;
-    if (count > 4) {
-        count = 1;
-    }
-
-    document.getElementById("radio" + count).checked = true;
-}
-
+// array de produtos
 var produtos = [{
     nome: 'Balenciaga Speed Treiner',
     preco: '29.999,90',
@@ -98,51 +87,13 @@ var produtos = [{
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    //laço para instanciar todos elementos do array produtos
+
     for (var i = 0; i < produtos.length; i++) {
+        var clist = document.getElementById('dtlist');
+        var coption = document.createElement('option');
 
-        // criando section - produto
-        var mainsection = document.getElementById('produtos');
-        var csection = document.createElement('section');
-        csection.className = 'produto';
-        csection.id = 'prod' + i;
-
-        mainsection.appendChild(csection);
-        // adicionando img na section criada
-        var sectionprod = document.getElementById('prod' + i);
-        var cimg = document.createElement('img');
-        cimg.src = produtos[i].imagem;
-
-        sectionprod.appendChild(cimg);
-        // criando div para nome e preço
-        var cdiv1 = document.createElement('div');
-        cdiv1.className = 'nome-preco';
-        cdiv1.id = 'nomepreco' + i;
-
-        sectionprod.appendChild(cdiv1);
-        //adicionando paragrafos dentro da div criada
-        var divcp = document.getElementById('nomepreco' + i);
-        var cp1 = document.createElement('p');
-        var cp2 = document.createElement('p');
-        cp1.textContent = produtos[i].nome;
-        cp2.textContent = 'R$' + produtos[i].preco;
-
-        divcp.appendChild(cp1);
-        divcp.appendChild(cp2);
-        //criando div para o <a> button
-        var cdiv2 = document.createElement('div');
-        cdiv2.className = 'bttComprar';
-        cdiv2.id = 'bttcomprar' + i;
-
-        sectionprod.appendChild(cdiv2);
-        //adicionando button ancora
-        var divbtt = document.getElementById('bttcomprar' + i);
-        var ca = document.createElement('a');
-        ca.href = './payment.html?id=' + i; //enviando id pela url no click
-        ca.innerHTML = 'COMPRAR AGORA';
-
-        divbtt.appendChild(ca);
+        coption.textContent = produtos[i].nome;
+        coption.value = i;
+        clist.appendChild(coption);
     }
-}, false);
-
-
+});

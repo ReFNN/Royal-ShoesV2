@@ -213,7 +213,6 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     position: relative;
     bottom: 40px;
     transition: all 1s;
@@ -226,6 +225,12 @@ body::-webkit-scrollbar-thumb {
     color: #ffffff;
     letter-spacing: 1px;
     font-size: 25px;
+    background: transparent;
+    border: none;
+}
+
+.bttComprar a:hover {
+    cursor: pointer;
 }
 
 .produto:hover {
@@ -233,7 +238,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .produto:hover .bttComprar {
-    cursor: pointer;
     position: relative;
     bottom: 70px;
 

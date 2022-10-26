@@ -35,7 +35,10 @@
             </div>
             <!-- LADO DIREITO - SEARCH BAR -->
             <div class="pesquisa">
-                <input id="teste" type="text" placeholder="Pesquisar...">
+                <form action="#" method="get">
+                    <input type="text" name="idbusca" placeholder="Pesquisar..." list="dtlist">
+                    <datalist id="dtlist"></datalist>
+                </form>
             </div>
         </div>
     </header>
@@ -52,16 +55,16 @@
 
                 <!-- slide images -->
                 <div class="slide first">
-                    <a href="#"><img src="./assets/img/slide/1.png" alt="imagem1"></a>
+                    <a href='./payment.html?id=9' ;><img src="./assets/img/slide/1.png" alt="imagem1"></a>
                 </div>
                 <div class="slide">
-                    <a href="#"><img src="./assets/img/slide/2.png" alt="imagem2"></a>
+                    <a href='./payment.html?id=0'><img src="./assets/img/slide/2.png" alt="imagem2"></a>
                 </div>
                 <div class="slide">
-                    <a href="#"><img src="./assets/img/slide/3.png" alt="imagem3"></a>
+                    <a href='./payment.html?id=1'><img src="./assets/img/slide/3.png" alt="imagem3"></a>
                 </div>
                 <div class="slide">
-                    <a href="#"><img src="./assets/img/slide/4.png" alt="imagem4"></a>
+                    <a href='./payment.html?id=14'><img src="./assets/img/slide/4.png" alt="imagem4"></a>
                 </div>
 
                 <!-- navegacao auto -->
@@ -89,224 +92,6 @@
         </div>
         <!-- GRID PRODUTOS -->
         <section id="produtos">
-            <!-- <section class="produto">
-                <img src="./assets/img/tenis-imgs/sapato_balenciaga-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Balenciaga Speed Treiner</p>
-                    <p>R$29.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/sapato_versace-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Versace Chain Reaction</p>
-                    <p> R$59.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/tenis_balenciaga-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Balenciaga Triple S</p>
-                    <p> R$16.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Nike_air_MAx_Axis-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Nike Air Max G3</p>
-                    <p> R$3.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Tenis_Adidas_alpha_bouce_2.0-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Adidas Alpha Bouce</p>
-                    <p> R$4.699,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Tenis_Adidas_ultra_bost-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Adidas Ultra Bost</p>
-                    <p> R$2.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/TENIS_FLY_BY_II-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Nike Fly II</p>
-                    <p> R$4.299,00</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Puma_Court_ride-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Puma Court Ride</p>
-                    <p> R$18.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Sapato_Nike_Core_motion-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Nike Core Motion</p>
-                    <p> R$2.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Nike_zoom-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Nike Zoom</p>
-                    <p> R$24.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Puma_Bmw-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Puma Bmw</p>
-                    <p> R$4.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Puma_R-S_Fast-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Puma RS Fast</p>
-                    <p> R$1.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Puma_Speed-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Puma style</p>
-                    <p>R$1.399,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Lacoste_Carnaby-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Lacoste Carbany</p>
-                    <p> R$4.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Lacoste_sporte-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Lacoste Sporte</p>
-                    <p> R$22.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Prada_C-Inverno-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Prada C-Inverno</p>
-                    <p> R$12.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Yeezy_350-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Yeezy 350</p>
-                    <p>R$4.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Yeezy_Boost_700-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Yeezy Boost 700</p>
-                    <p> R$8.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Tommy_Hilfiger_Classc-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Tommy Hilfiger</p>
-                    <p> R$18.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section>
-
-            <section class="produto">
-                <img src="./assets/img/tenis-imgs/Vans_Old_Skool-removebg-preview.png">
-                <div class="nome-preco">
-                    <p>Vans Old Skool</p>
-                    <p>R$12.999,90</p>
-                </div>
-                <div class="bttComprar">
-                    <a href="./payment.html">COMPRAR AGORA</a>
-                </div>
-            </section> -->
 
         </section>
     </main>
@@ -343,6 +128,7 @@
     </footer>
     <!-- REFERÊNCIA JS -->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/datalist.js"></script>
 </body>
 
 </html>

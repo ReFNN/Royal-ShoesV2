@@ -32,7 +32,10 @@
                 </ul>
             </div>
             <div class="pesquisa">
-                <input type="text" placeholder="Pesquisar..." onclick="naoFunciona()">
+                <form action="#" method="get">
+                    <input type="text" name="idbusca" placeholder="Pesquisar..." list="dtlist">
+                    <datalist id="dtlist"></datalist>
+                </form>
             </div>
         </div>
     </header>
@@ -42,10 +45,10 @@
             <div class="left-side">
                 <h1>FINALIZE SUA COMPRA...</h1>
                 <div class="card">
-                    <img src="./assets/img/tenis-imgs/sapato_balenciaga-removebg-preview.png">
+                    <img id="img" src="./assets/img/tenis-imgs/sapato_balenciaga-removebg-preview.png">
                     <div class="info-produto">
-                        <p>Balenciaga Speed Treiner </p>
-                        <p>R$29.999,90</p>
+                        <p id="p1">Balenciaga Speed Treiner </p>
+                        <p id="p2">R$29.999,90</p>
                     </div>
                 </div>
                 <div class="detalhes-produto">
@@ -175,8 +178,7 @@
             </div>
         </div>
     </main>
-    <!-- REFERÊNCIA JS -->
-    <script src="./assets/js/script.js"></script>
+
     <footer>
         <div class="conteiner-footer">
             <div class="sobre-nos">
@@ -205,6 +207,9 @@
             <p>© 2022 Copyright: Royal Shoes</p>
         </div>
     </footer>
+    <!-- REFERÊNCIA JS -->
+    <script src="./assets/js/datalist.js"></script>
+    <script src="./assets/js/pay.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 function naoFunciona() {
-  alert('Essa função ainda não está disponível! :(')
+    alert('Essa função ainda não está disponível! :(')
 }
 
 function redireciona() {
-  window.location.href = './mainpage.html';
+    window.location.href = './mainpage.html';
 }
